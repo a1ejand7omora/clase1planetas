@@ -1,5 +1,5 @@
-let nombrePlanetas=["Tierra","Marte"]
-let distancia = [6, 3, "67"]
+let nombrePlanetas=["Tierra","Marte",'Jupiter','Saturno','Urano']
+let distancia = [6, 3,4,5,6, "67"]
 const tamanio =[]
 
 let i=0;
@@ -17,3 +17,14 @@ for(const key in distancia){
         
     }
 }   
+
+nombrePlanetas.forEach((value,index,array)=>{
+    console.log('planeta',index,value)
+})
+
+
+nombrePlanetas.map((planetas,index)=>{
+    return(
+        console.log('El planeta', planetas, 'tiene tamaño de :', index)
+    )
+})
